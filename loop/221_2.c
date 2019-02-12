@@ -31,7 +31,7 @@ double CelToFah(double num)
 {
 	double res;
 	res = 1.8 * num + 32;	
-	printf("Resulting temperature in Fahrenheit: %lf", res);
+	printf("Resulting temperature in Fahrenheit: %.3lf", res);
 	return 0;
 }
 
@@ -39,6 +39,6 @@ double FahToCel(double num)
 {
 	double res;
 	res = (num - 32) * 5 / 9;
-	printf("Resulting temperature in Celcius: %lf", res);
+	printf("Resulting temperature in Celcius: %.3lf", res);
 	return 0;
 }
