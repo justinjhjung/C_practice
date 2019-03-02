@@ -5,17 +5,17 @@ int Length(char str[]);
 
 int main(void)
 {
-	char word[100]={0};
+	char word[100]={0}; // initialize the string array
 	int i=0, len=0;
 	printf("Put English word to see if it is Palindrome or not: ");
-	scanf("%s", word);
-	len = Length(word);
+	scanf("%s", word); // get the input
+	len = Length(word); // Calculate the length of the word
 
 	// Put a word without 0 to the new character array
 	char res[len];
 	while (word[i]!=0)
 	{
-		res[i] = word[i];
+		res[i] = word[i]; // copy the word into a new array
 		i++;
 	}
 	
